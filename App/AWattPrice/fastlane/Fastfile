@@ -37,12 +37,18 @@ private_lane :prompt_increment_build_number do
   end
 end
 
+lane :install_match do
+  match(type: "development", app_identifier: ["me.space8.AWattPrice", "me.space8.AWattPrice.*", "me.space8.AWattPrice.staging", "me.space8.AWattPrice.staging.*"])
+  match(type: "adhoc", app_identifier: ["me.space8.AWattPrice", "me.space8.AWattPrice.*"])
+  match(type: "appstore", app_identifier: ["me.space8.AWattPrice", "me.space8.AWattPrice.*"])
+end
+
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
     prompt_increment_marketing_number
     prompt_increment_build_number
-    # build_app(scheme: "AWattPrice", configuration: "Distribution AppStore Production")
-    # upload_to_testflight(skip_submission: true, skip_waiting_for_build_processing: true)
+    build_app(scheme: "AWattPrice", configuration: "Distribution AppStore Production")
+    upload_to_testflight(skip_submission: true, skip_waiting_for_build_processing: true)
   end
 end
