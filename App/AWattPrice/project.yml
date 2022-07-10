@@ -73,6 +73,7 @@ targets:
           PROVISIONING_PROFILE_SPECIFIER: match AppStore me.space8.AWattPrice
           
     dependencies:
+      - target: WidgetExtension
       - package: Resolver
       
   WidgetExtension:
@@ -80,7 +81,7 @@ targets:
     platform: iOS
     
     sources:
-      - path: Widgets
+      - path: WidgetExtension
       
     settings:
       configs:

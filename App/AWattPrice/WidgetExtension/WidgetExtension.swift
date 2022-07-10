@@ -1,8 +1,8 @@
 //
-//  Widget.swift
-//  Widget
+//  WidgetExtension.swift
+//  WidgetExtension
 //
-//  Created by Léon Becker on 25.06.22.
+//  Created by Léon Becker on 03.07.22.
 //
 
 import WidgetKit
@@ -40,7 +40,7 @@ struct SimpleEntry: TimelineEntry {
     let configuration: ConfigurationIntent
 }
 
-struct WidgetEntryView : View {
+struct WidgetExtensionEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -49,21 +49,21 @@ struct WidgetEntryView : View {
 }
 
 @main
-struct Widget: Widget {
-    let kind: String = "Widget"
+struct WidgetExtension: Widget {
+    let kind: String = "WidgetExtension"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            WidgetEntryView(entry: entry)
+            WidgetExtensionEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
 }
 
-struct Widget_Previews: PreviewProvider {
+struct WidgetExtension_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        WidgetExtensionEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
