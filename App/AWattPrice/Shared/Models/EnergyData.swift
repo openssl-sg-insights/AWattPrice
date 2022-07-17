@@ -42,11 +42,11 @@ struct EnergyData: Decodable {
 
     /// Prices which have start equal or past the start of the current hour.
     let currentPrices: [EnergyPricePoint]
-    /// Current prices cheapest price point.
+    /// Cheapest price point regarding the current prices.
     let minCostPricePoint: EnergyPricePoint?
-    /// Current prices expensivest
+    /// Most expensive price point regarding the current prices.
     let maxCostPricePoint: EnergyPricePoint?
-    /// Current prices time range from the start time of the earliest to the end time of the latest price point.
+    /// Time range from start time of earliest entry to end time of latest entry regarding the current prices.
     let minMaxTimeRange: ClosedRange<Date>?
 
     enum CodingKeys: CodingKey {
@@ -59,6 +59,7 @@ struct EnergyData: Decodable {
         
         let now = Date()
         let hourStart = Calendar.current.startOfHour(for: now)
+
         currentPrices = prices
             .compactMap { $0.startTime >= hourStart ? $0 : nil }
             .sorted { lhsPricePoint, rhsPricePoint in

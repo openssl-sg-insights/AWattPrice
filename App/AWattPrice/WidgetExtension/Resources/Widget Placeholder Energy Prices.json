@@ -1,0 +1,124 @@
+{
+    "prices": [
+        {
+            "start_timestamp": 1657472400,
+            "end_timestamp": 1657476000,
+            "marketprice": 322.13
+        },
+        {
+            "start_timestamp": 1657476000,
+            "end_timestamp": 1657479600,
+            "marketprice": 369.9
+        },
+        {
+            "start_timestamp": 1657479600,
+            "end_timestamp": 1657483200,
+            "marketprice": 378.07
+        },
+        {
+            "start_timestamp": 1657483200,
+            "end_timestamp": 1657486800,
+            "marketprice": 389.17
+        },
+        {
+            "start_timestamp": 1657486800,
+            "end_timestamp": 1657490400,
+            "marketprice": 371.92
+        },
+        {
+            "start_timestamp": 1657490400,
+            "end_timestamp": 1657494000,
+            "marketprice": 320.08
+        },
+        {
+            "start_timestamp": 1657494000,
+            "end_timestamp": 1657497600,
+            "marketprice": 278.0
+        },
+        {
+            "start_timestamp": 1657497600,
+            "end_timestamp": 1657501200,
+            "marketprice": 275.96
+        },
+        {
+            "start_timestamp": 1657501200,
+            "end_timestamp": 1657504800,
+            "marketprice": -100
+        },
+        {
+            "start_timestamp": 1657504800,
+            "end_timestamp": 1657508400,
+            "marketprice": 272.15
+        },
+        {
+            "start_timestamp": 1657508400,
+            "end_timestamp": 1657512000,
+            "marketprice": 298.0
+        },
+        {
+            "start_timestamp": 1657512000,
+            "end_timestamp": 1657515600,
+            "marketprice": -300
+        },
+        {
+            "start_timestamp": 1657515600,
+            "end_timestamp": 1657519200,
+            "marketprice": 415.08
+        },
+        {
+            "start_timestamp": 1657519200,
+            "end_timestamp": 1657522800,
+            "marketprice": 433.97
+        },
+        {
+            "start_timestamp": 1657522800,
+            "end_timestamp": 1657526400,
+            "marketprice": 416.32
+        },
+        {
+            "start_timestamp": 1657526400,
+            "end_timestamp": 1657530000,
+            "marketprice": 404.98
+        },
+        {
+            "start_timestamp": 1657530000,
+            "end_timestamp": 1657533600,
+            "marketprice": 396.9
+        },
+        {
+            "start_timestamp": 1657533600,
+            "end_timestamp": 1657537200,
+            "marketprice": 380.42
+        },
+        {
+            "start_timestamp": 1657537200,
+            "end_timestamp": 1657540800,
+            "marketprice": 369.28
+        },
+        {
+            "start_timestamp": 1657540800,
+            "end_timestamp": 1657544400,
+            "marketprice": 333.76
+        },
+        {
+            "start_timestamp": 1657544400,
+            "end_timestamp": 1657548000,
+            "marketprice": 332.61
+        },
+        {
+            "start_timestamp": 1657548000,
+            "end_timestamp": 1657551600,
+            "marketprice": 319.82
+        },
+        {
+            "start_timestamp": 1657551600,
+            "end_timestamp": 1657555200,
+            "marketprice": 375.48
+        },
+        {
+            "start_timestamp": 1657555200,
+            "end_timestamp": 1657558800,
+            "marketprice": 405.0
+        }
+    ]
+}

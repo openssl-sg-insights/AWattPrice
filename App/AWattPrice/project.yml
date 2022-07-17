@@ -43,6 +43,7 @@ targets:
     
     sources:
       - path: AWattPrice
+      - path: Shared
         
     settings:
       base:
@@ -82,6 +83,7 @@ targets:
     
     sources:
       - path: WidgetExtension
+      - path: Shared
       
     settings:
       configs:
