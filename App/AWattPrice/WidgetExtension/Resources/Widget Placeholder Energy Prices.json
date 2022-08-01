@@ -43,7 +43,7 @@
         {
             "start_timestamp": 1657501200,
             "end_timestamp": 1657504800,
-            "marketprice": -80
+            "marketprice": 80
         },
         {
             "start_timestamp": 1657504800,
@@ -58,7 +58,7 @@
         {
             "start_timestamp": 1657512000,
             "end_timestamp": 1657515600,
-            "marketprice": -300
+            "marketprice": 300
         },
         {
             "start_timestamp": 1657515600,
@@ -119,6 +119,11 @@
             "start_timestamp": 1657555200,
             "end_timestamp": 1657558800,
             "marketprice": 405.0
+        },
+        {
+            "start_timestamp": 1657562400,
+            "end_timestamp": 1657566000,
+            "marketprice": 200.0
         }
     ]
 }
